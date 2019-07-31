@@ -1,0 +1,8 @@
+.git
+.gitignore
+.idea
+__pycache__/
+README.md
+Python3.6_Venv/
+Storage/
+Test/
