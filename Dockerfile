@@ -18,16 +18,10 @@ ENV TZ='Asia/Shanghai'
 
 ENV master_dir  /LickDog/
 
-#COPY ./Base/ $master_dir/Base/
-#COPY ./Dogs/ $master_dir/Dogs/
-#COPY ./requirements.txt $master_dir/
-#COPY ./*.py $master_dir/
-
 ADD . $master_dir/
 
 WORKDIR $master_dir
 
 RUN pip install -r ./requirements.txt
 
-#ENTRYPOINT ["python", "main.py"]
-ENTRYPOINT ["bash"]
+ENTRYPOINT ["python", "main.py"]
