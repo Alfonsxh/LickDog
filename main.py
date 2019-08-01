@@ -5,12 +5,6 @@
 @time: 2019/6/24 下午10:40
 @version: v1.0
 """
-import os
-import sys
-
-sys.path.append(os.path.dirname(__file__))
-print(sys.path)
-
 import time
 import threading
 import argparse
